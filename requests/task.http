@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/task
+
+#####
+
+POST http://localhost:3000/api/task
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en java",
+    "description": "trabajo empresa",
+    "done": true
+}
+
+###
+
+GET http://localhost:3000/api/task/60eb9481f74dbd3440d164a31
+
+###
+DELETE  http://localhost:3000/api/task/453465465dsdsds
+
+###
+GET http://localhost:3000/api/task/done
+
+###
+PUT  http://localhost:3000/api/task/60ecc2d098f91b40e83f85e5
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en COBOL",
+    "description": "trabajo empresa",
+    "done": true
+}
